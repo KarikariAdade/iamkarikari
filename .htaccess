@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteRule ^article/(.*)$ article/post-detail.php?slug=$1 [NC,L]
+RewriteRule ^tags/([\w-]+)$ tags/tags.php?tag=$1 
+RewriteRule ^home index.php [NC,L]
+RewriteRule ^about about.php [NC,L]
+RewriteRule ^news news.php [NC,L]
+RewriteRule ^personal personal.php [NC,L]
+RewriteRule ^news news.php [NC,L]
+RewriteRule ^search search.php [NC,L]
+RewriteRule ^contact contact.php [NC,L]

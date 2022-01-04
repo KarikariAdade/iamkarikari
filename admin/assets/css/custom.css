@@ -1,0 +1,824 @@
+/*LOGIN SECTION*/
+body{
+	/*overflow-x: hidden !important;*/
+}
+@font-face {
+font-family: 'Nunito Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Nunito Regular'), url('Nunito-Regular.woff') format('woff');
+}
+*{
+	font-family: 'Nunito Regular' !important;
+}
+/* BASICS */
+.alert-box, #social-alert-box{
+	display: none;
+	background-color: #d62649;
+	color: #fff;
+}
+#show_more_posts_btn, #show_tag_posts_btn_1, #show_tag_posts_btn_2{
+	padding: 5px 10px;
+	font-size: 20px;
+	position: absolute;
+	right: 0;
+	animation-duration: 1s;
+	animation-name: showss;
+	animation-iteration-count: infinite;
+}
+@keyframes showss{
+	0%{
+		bottom: 0%;
+	}
+	50%{
+		bottom: -10px;
+	}
+	100%{
+		bottom: 0%;
+	}
+}
+
+.box-shadow {
+	box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+}
+#error_message, .alert-box .fa-info-circle{
+	color: #fff !important;
+}
+.login-section .sign-in-alert .alert-danger, .login-section .sign-in-alert .alert-success{
+	width:80%;
+	text-align: left;
+	display: none;
+	color: #fff;
+}
+.login-section .sign-up-alert .alert-danger, .login-section .sign-up-alert .alert-success{
+	width:100%;
+color: #fff;
+	padding: 0;
+	display: none;
+}
+
+.login-section{
+	background:url('../img/auth-bg.jpg') no-repeat center center !important;;
+	height: 100vh;
+	width: 100%;
+}
+.login-section .login-form-class{
+	width: 100%;
+	background-color: rgba(255,255,255,.95);
+	transform: translate(0%, 5%);
+	height: auto;
+	overflow: hidden;
+	/*margin-bottom: 15px;*/
+	border-radius: 20px;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
+	background-color: rgba(255,255,255,.95);
+}
+.login-section .login-form-class h1{
+	padding-top: 20%;
+	text-transform: uppercase;
+	text-align: center;
+}
+.login-section #first-p{
+	width: 130px;
+	height: 130px; 
+	background: linear-gradient(to left, #e65c00, #f9d423);
+	border-radius: 50%; 
+	position: absolute;
+	right: -45px;
+	top: -45px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
+	border: 20px solid rgba(230, 92, 0, .9);
+}
+.login-section #last-p{
+	width: 130px;
+	height: 130px; 
+	background: linear-gradient(to right, #e65c00, #f9d423);
+	border-radius: 50%; 
+	position: absolute;
+	left: -50px;
+	bottom: -65px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.9); 
+	border: 20px solid rgba(230, 92, 0, .9);
+}
+
+.login-section .login-form{
+	padding: 5% 35px;
+	margin-bottom: 10%;
+	/*height: 80vh;*/
+}
+.login-section .login-form input, .login-section .sign-up-form input{
+	border:none;
+	margin-bottom: 10%;
+	padding: 0 !important;
+	padding-top: 10px;
+	border-bottom: 1px solid #1a1e25;
+	border-radius: 0;
+	background-color: transparent;
+	position: relative;
+	z-index: 50;
+}
+.login-section .form-group, .login-section .sign-up-form .form-group{
+	position: relative;
+}
+.login-section .form-group label{
+	position: absolute;
+	top: 40%;
+	z-index: 6;
+	transition: .5s;
+}
+.login-section .form-group input:focus, .login-section .form-group input:active{
+	background-color: transparent !important;
+	z-index: 0;
+}
+.login-section .form-group input:focus ~ label,
+.login-section .form-group input:valid ~ label{
+	color: #1a1e25;
+	top: -15%;
+	font-size: 14px;
+}
+.btn-style-one:focus{
+	outline: none;
+}
+.btn-style-one{
+  	position: relative;
+  	display: inline-block;
+  	font-size: 15px;
+  	line-height: 30px;
+  	color: #1a1e25;
+  	padding: 9px 32px;
+  	font-weight: 600;
+  	background: linear-gradient(to right, #e65c00, #f9d423);
+  	overflow: hidden;
+  	border-radius: 50px;
+  	border:2px solid #fbc25e;
+  	box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  	text-transform: capitalize;
+  }
+
+  .btn-style-one .txt{
+  	position:relative;
+  	z-index:1;
+  }
+
+  .btn-style-one:before{
+  	position: absolute;
+  	content: '';
+  	top: 0px;
+  	bottom: 0px;
+  	left: 0px;
+  	right: -50px;
+  	border-bottom: 50px solid #e65c00;
+  	border-right: 30px solid transparent;
+  	transition:all 600ms ease;
+  	transform: translateX(-50%);
+  }
+
+  .btn-style-one:hover::before{
+  	-webkit-transform: translateX(-40%);
+  	transform: translateX(100%);
+  }
+  .btn-style-one:hover{
+  	color: #1a1e25;
+  	border-color:#fdc25e;
+  }
+.login-section .login-form-class #forgot-password a small, .sign-up-form .col-md-12 #forgot-password small{
+	color: #e65c00;
+	font-weight: 900;
+}
+
+/*==========================================
+SIGN UP FORM
+==========================================*/
+.login-section .sign-up-form-class{
+	width: 100%;
+	background-color: #fff;
+	height: auto;
+	transform: translateY(0%);
+	padding: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.3);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.login-section .sign-up-form-class #first-p{
+	width: 100px;
+	height: 100px; 
+	background: linear-gradient(to left, #e65c00, #f9d423);
+	border-radius: 50%; 
+	position: absolute;
+	right: -30px;
+	top: -30px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
+	border: 20px solid rgba(230, 92, 0, .9);
+}
+.login-section .sign-up-form-class #last-p{
+	width: 100px;
+	height: 100px; 
+	background: linear-gradient(to right, #e65c00, #f9d423);
+	border-radius: 50%; 
+	position: absolute;
+	left: -30px;
+	bottom: -50px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.9); 
+	border: 20px solid rgba(230, 92, 0, .9);
+}
+.login-section .sign-up-form-class h1{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.login-section .sign-up-form .form-group label{
+	position: absolute;
+	top: 20%;
+	transition: .5s;
+}
+.login-section .sign-up-form-class{
+	padding-bottom: 5%;
+}
+
+.dashboard-stats{
+	padding: 30px;
+}
+
+
+/*=================================================
+ADD PROFILE SECTION
+==================================================*/
+.add-profile-section .profile-card, .add-profile-section .personal-detail-card{
+	padding: 20px 15px;
+	background-color: #fff;
+	text-align: center;
+}
+.add-profile-section .profile-card .card-profile-img img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 0 5px 30px rgba(0,0,0,.3);
+}
+.add-profile-section .profile-card h2{
+	padding-top: 10px;
+}
+.add-profile-section .profile-card p{
+	font-size: 15px;
+	word-spacing: 1px;
+}
+
+.author-socials button{
+	padding: 6px 13px;
+	margin-right: 10px;
+	width: 15%;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,.2);
+	transition: .5s;
+}
+.author-socials button:hover{
+	transform: translateY(-5px);
+}
+.author-socials button a .author-icon{
+	color: #fff;
+}
+.post-author-detail .row .col-md-3 p{
+	padding-top: 5%;
+	text-align: center;
+	font-weight: bold;
+}
+.author-socials button:first-child{
+	background-color: #3b5998;
+}
+.author-socials button:nth-child(2){
+	background-color: #55acee;
+}
+.author-socials button:nth-child(3){
+	background-color: #3b5998;
+}
+.author-socials button:last-child{
+	background-color: #b31217;
+}
+.add-profile-section .personal-detail-card{
+	text-align: right;
+}
+.add-profile-section .personal-detail-card h2{
+	text-align: left;
+	padding-bottom: 5%;
+}
+.add-profile-section .personal-detail-card p{
+	display: inline-flex;
+}
+.add-profile-section .personal-detail-card p span:first-child{
+	padding-right: 80px;
+	font-weight: bold;
+}
+.add-profile-section .personal-detail-card p{
+	text-align: left !important;
+	width: 100%;
+}
+.add-profile-section .personal-detail-card p span{
+	width: 100%;
+}
+.add-profile-section .personal-detail-card p span:last-child{
+	text-align: right;
+}
+#hour_minute{
+	text-align: center;
+	color: #081340;
+	font-size: 55px;
+	padding: 0px 15px;
+}
+#today{
+	text-align: center; 
+	padding-bottom: 5%;
+	color: #081340;
+}
+.sidebar-img:last-child{
+	position: relative;
+	bottom: -35px;
+}
+textarea{
+	resize: none;
+}
+
+
+/*=================================================
+VIEW PROFILE SECTION 
+==================================================*/
+#profile-section .col-md-4{
+	margin:0;
+	padding:10px;
+	background:#fff;
+	border: 1px solid #ccc;
+	border-right: none;
+}
+#profile-section .col-md-4 .card{
+	border:none;
+}
+#profile-section .col-md-4 .personal-form h3{
+	padding: 5% 0px;
+}
+#profile-section .col-md-4 .personal-form form button{
+	color: #fff;
+}
+.edit-profile-pic-form input{
+	text-align: center;
+	margin-left: 20%;
+}
+.edit-profile-pic-form button{
+	color: #fff;
+}
+.edit-profile-pic-form button:hover, .reset-password-form button:hover{
+	color: #fff;
+}
+.edit-profile-form .col-md-12 button, .reset-password-form button{
+	margin-top: 5%;
+	color: #fff;
+}
+
+.reset-password-form #hasbtn .password-icon{
+	/*background-color: red;*/
+	/*width:20px;*/
+	position: absolute;
+	right: 50px;
+	top: 37.5% !important;
+}
+#upload_img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+#profile-pictures-h2{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.image-detail{
+	display: flex;
+}
+.image-detail span{
+	background-color: #fff;
+	position: absolute;
+}
+.image-detail .make_profile_pic{
+	position: absolute;
+	font-size: 14px;
+	right: 15px;
+	padding: 10px;
+	background-color: #fff;
+	bottom: 10%;
+	border-radius: 5px;
+	z-index: 10;
+	cursor: pointer;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.image-detail .fa-trash{
+	color: #081340;
+}
+.image-detail p button{
+	top: 5% !important;
+	position: absolute;
+	z-index: 10;
+	border-radius: 0;
+	border: none;
+	border-bottom-right-radius: 5px;
+	left: 15px;
+	background-color: #fff;
+	padding: 5px 10px;
+}
+
+
+
+/*==================================================
+
+ADD POST SECTION
+
+==================================================*/
+.add-post-section .col-md-4 .tag-section-div, .add-post-section .col-md-8{
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 4% 4% !important;
+	margin-bottom: 15%;
+}
+.add-post-section .col-md-4 form button{
+	text-align: center;
+}
+.add-post-section .col-md-4 h2{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 10px;
+}
+.add-post-section .col-md-4 .tag-section-div, .view-post-section .tag-section-div{
+	padding: 10px;
+}
+.add-post-section .col-md-4 .tag-section-div p, .view-post-section .tag-section-div p{
+	transition: .5s;
+	background-color: #081340;
+	display: inline-block;
+	padding: 3px 8px;
+	color: #fff;
+	border-radius: 50px;
+	font-size: 15px;
+}
+.add-post-section .col-md-4 .tag-section-div p .fa-times{
+	color: #fff;
+	font-size: 15px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.add-post-section .col-md-4 .tag-section-div p a, .view-post-section .tag-section-div p a{
+	color: #fff;
+}
+.add-post-section .col-md-4 .tag-section-div p:hover a span, .view-post-section .tag-section-div p:hover{
+	color: #fff;
+	box-shadow: 0 4px 10px rgba(0,0,0,.3);
+}
+#summernote{
+	resize: none !important;
+}
+.post_img_div, .post_img_div #post_img_show{
+	height: 30vh !important;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+	/*border: dashed 1px #ccc;*/
+}
+.post_img_div #post_img_show{
+	width: 100%;
+}
+.add-post-section .col-md-8 .add-post-form button{
+	margin-top: 5%;
+}
+
+.card{
+	position: relative;
+	width: 100% !important;
+	background-color: #fff;
+	margin-top: 5%;
+	padding-left: 7px;
+	padding-right: 7px;
+	border-radius: 15px;
+	border:none;
+	margin-bottom: 5%;
+	transition: .5s;
+	box-shadow: 0 2px 30px hsla(0,0%,4%,.1), 0 0 3px 1px hsla(0,0%,4%,.1);
+}
+.card .card-img-top{
+	transition: .5s;
+	width: 100%;
+	box-shadow: 0px;
+	height: 190px;
+	border-radius: 10px;
+	position: relative;
+	z-index: 0;
+	transform: translateY(-10px);
+	box-shadow: 0 2px 3px hsla(0,0%,4%,.1), 0 0 0 1px hsla(0,0%,4%,.1);
+}
+.card .card-body .card-buttons{
+	display: inline-flex !important;
+}
+.card .card-body button{
+	padding: 3px 10px;
+	margin-right: 10px;
+}
+.card .card-body button a{
+	color: #fff;
+}
+.card:hover .card-img-top{
+	transform: translateY(0px);
+}
+
+.card .card-body{
+	padding: 8px;
+	padding-bottom: 7%;
+}
+.card .card-body span{
+	font-size: 12px;
+	color: #000;
+	display: inline-flex;
+}
+.card .card-body span .fa-sm{
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.card .card-body span:first-child{
+	padding-right: 20%;
+}
+.card .card-body h5{
+	font-size: 17px;
+	padding-bottom: 5%;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.card .card-body h5 a{
+	color: #1a1e25;
+	transition: .5s;
+}
+.card .card-body h5 a:hover{
+	color: #fbc25a;
+}
+.post-intro-container{
+	margin-top: 5%;
+}
+.card #card-tag{
+	position: absolute;
+	top: 12px;
+	left: -10px;
+	z-index: 1;
+	/*background: #FF4241;*/
+	background: #1a1e25;
+	display: block;
+	color: #fbc25e;
+	padding: 5px 10px 5px;
+	border-radius: 3px;
+	letter-spacing: 1.5px;
+	transition: .5s;
+	visibility: hidden;
+}
+.card:hover #card-tag{
+	/*z-index: 1;*/
+	visibility: inherit;
+}
+/*==================================================
+
+VIEW POST SECTION
+
+====================================================*/
+.view-post-section .col-md-8{
+	background-color: #fff;
+	padding: 10px !important;
+	border-radius: 5px;
+	margin-bottom: 5%;
+}
+.view-post-section .col-md-4 .tag-section-div{
+	background-color: #fff;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 4% 4% !important;
+	margin-bottom: 15%;
+}
+.tag-section-div .recent-post{
+	display: inline-flex;
+	margin-top: 5%;
+	padding-bottom: 5%;
+}
+.tag-section-div .recent-post img{
+	height: 50px; 
+	width: 50px;
+	border-radius: 10px;
+	transform: rotate(0deg);
+	margin-right: 20px;
+	transition: .5s;
+	/*margin-top: -15px;*/
+	transform-origin: bottom right;
+}
+.tag-section-div .recent-post:hover img{
+	transform: rotate(10deg);
+}
+.tag-section-div .recent-post h3 a{
+	color: #081340;
+	transition: .5s;
+}
+.tag-section-div .recent-post:hover h3 a{
+	color: #fbc25e;
+}
+
+/*==================================================
+
+POST DETAIL SECTION
+
+====================================================*/
+.post-detail-div{
+	padding: 4% 10px;
+}
+.post-detail-div img{
+	width: 100%;
+	height: 55vh;
+	border-radius: 10px;
+
+}
+.post-detail-div #post_title{
+	padding-bottom: 3%;
+	text-align: center;
+}
+.post-detail-div .post-detail-stats {
+	padding: 5% 10px;
+}
+.post-detail-div .post-detail-stats span{
+	display: inline-flex;
+	margin-right: 5%;
+}
+.post-detail-div .post-detail-stats span .fa-sm{
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.post-detail-div .post-detail-stats span:last-child{
+	margin: 0 !important;
+	padding: 2px 5px;
+}
+.post-detail-div .next-prev-posts{
+	display: inline-flex;
+	width: 100%;
+}
+.post-detail-div .next-prev-posts img{
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-right: 10px;
+}
+.post-detail-div .next-prev-posts h4 a{
+	color: #081340;
+	transition: .5s;
+}
+.post-detail-div .next-prev-posts h4 a:hover{
+	color: #fbc25e;
+}
+.post-detail-div .next-prev-posts .prev-post, .post-detail-div .next-prev-posts .next-post{
+	/*background-color: red;*/
+	margin: 10px;
+	padding: 5px 1%;
+	border-radius: 10px;
+	width: 100%;
+}
+/*==================================================
+
+EDIT POST SECTION
+
+====================================================*/
+.edit_post_col_4 .tag-section-div img{
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+}
+.edit_post_col_4 .tag-section-div #edit_del_img_btn{
+	padding: 5px 10px;
+	position: absolute;
+	left: 7.5%;
+}
+/*==================================================
+
+EDIT POST SECTION
+
+====================================================*/
+.login-section .login-form-class img{
+	width: 100px;
+	height: 100px;
+	margin-top: 0;
+	border-radius: 50%;
+}
+.login-section .login-form-class h1{
+	padding-top: 10%;
+	font-size: 20px;
+}
+.login-section .login-form-class .user-img-class p{
+	font-weight: 600;
+	/*padding-top: 5%;*/
+}
+#expired-token{
+	color: #e65c00;
+	text-align: center;
+	font-size: 20px;
+	padding: 5% 5px; 
+}
+
+/*==================================================
+
+FORGOT PASSWORD MODAL
+
+====================================================*/
+#forgot-password-form-modal .modal-footer button{
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+.mail-stats{
+	padding: 20px;
+}
+.mail-stats .col-md-6:last-child{
+	text-align: right;
+	padding-top: 5%;
+}
+.mail-stats .col-md-6 span{
+	font-weight: bold;
+	padding: 0 !important;
+	font-size: 16px;
+}
+#mail-message{
+	padding: 10px 20px;
+}
+
+.media #notif-icon{
+	/*background-color: #70768e;*/
+	font-size: 10px;
+	padding: 1px 3px;
+	line-height: 10px;
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	top: 0%;
+	right: -20%;
+}
+/*==================================================
+
+RESPONSIVENESS
+
+====================================================*/
+/*LOGIN SECTION*/
+@media(min-width: 1000px){
+	.login-section .login-form-class{
+		width: 30%;
+		background-color: rgba(255,255,255,.95);
+		transform: translate(115%, 12%);
+		overflow: hidden;
+	}
+	.login-section .login-form{
+	padding: 5% 45px;
+	margin-bottom: -20px;
+	height: 62vh;
+
+}
+
+
+/*SIGN UP FORM*/
+.login-section .sign-up-form-class{
+	width: 50%;
+	margin-top: 20px;
+}
+.login-section .sign-up-form-class #first-p{
+	width: 130px;
+	height: 130px; 
+	background: linear-gradient(to left, #e65c00, #f9d423);
+	border-radius: 50%; 
+	position: absolute;
+	right: -30px;
+	top: -30px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
+	border: 20px solid rgba(230, 92, 0, .9);
+}
+.login-section .sign-up-form-class{
+	padding-bottom: 1%;
+}
+.login-section .sign-up-form-class #last-p{
+	width: 130px;
+	height: 130px; 
+	background: linear-gradient(to right, #e65c00, #f9d423);
+	border-radius: 50%; 
+	position: absolute;
+	left: -30px;
+	bottom: -50px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.9); 
+	border: 20px solid rgba(230, 92, 0, .9);
+}
+.login-section .sign-up-form-class h1{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+.login-section .sign-up-alert .alert-danger, .login-section .sign-up-alert .alert-success{
+	width:50%;
+	color: #fff;
+}
+.alert-box{
+	text-align: center;
+	width: 80%;
+	display: none;
+	padding: 10px;
+	color: #fff !important;
+	background-color: #d62649;
+}
+}
