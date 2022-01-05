@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta property="og:locale" content="en_US" />
-    <meta name="AK Web" description="The blog of Kumasi based Web Developer">
-    <meta name="description" content="The blog of Kumasi based Web Developer">
-    <meta name="og:description" content="The blog of Kumasi based Web Developer, writing about web tools, CSS, JavaScript, PHP, frameworks etc">
-    <meta name="keywords" content="news, ghana news, hot gossip, latest news, music news, ghana news">
+    <meta name="Health In Totality" description="The Healthcare Blog">
+    <meta name="description" content="The Healthcare Blog">
+    <meta name="og:description" content="The Healthcare Blog">
+    <meta name="keywords" content="News, Reviews, Healthcare, Technology, Health Issues, Pharmacy">
     <meta property='og:title' content='Blog - AK Web'>
     <meta property='og:type' content='article'>
-    <meta name="og:url" content="https://www.akweb.blog">
+    <meta name="og:url" content="www.healthintotality.com">
     <meta charset="utf-8">
-    <title>Blog - AK Web | Web development made simpler</title>
+    <title>Health In Totality</title>
     <?php include 'includes/header.php';?>
 </head>
 <body>
@@ -19,8 +19,8 @@
         <?php include 'includes/modal-pop-up.php'; ?>
         <div class="container post-intro-container">
             <div class="welcome-section">
-                <h3>Welcome to akweb.com</h3>
-                <p>fun and practical web development tutorials</p>
+                <h3>Welcome to health in totality</h3>
+                <p>the healthcare blog</p>
             </div>
             <div class="row">
                 <?php 

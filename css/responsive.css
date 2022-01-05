@@ -550,7 +550,20 @@
 	.main-header .logo-outer .logo img{
 		position:relative;
 		display:inline-block;
-		max-width:100%;
+		margin-top: -22px;
+		padding-top: 0;
+		max-width:100px;
+	}
+	.fixed-header .sticky-header .logo img{
+		position:relative;
+		display:inline-block;
+		margin-top: -16px;
+		padding-top: 0;
+		max-width:100px;
+	}
+
+	.fixed-header .sticky-header .navigation{
+		margin-top: 10px;
 	}
 
 

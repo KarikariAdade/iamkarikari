@@ -18,7 +18,7 @@ include 'connect.php';
         <div class="inner-container">
             <div class="auto-container clearfix">
                 <div class="logo-outer">
-                    <div class="logo"><a href="home"><img src="img/new_logo.png" alt="" title=""></a></div>
+                    <div class="logo"><a href="home"><img src="img/healthintotality.jpeg" alt="" title=""></a></div>
                 </div>
                 <div class="nav-outer clearfix"><div class="mobile-nav-toggler"><span class="icon fa fa-bars"></span></div>
                 <nav class="main-menu navbar-expand-md navbar-light">
@@ -67,8 +67,8 @@ include 'connect.php';
                             </ul>
                         </li>
 
-                        <li><a href="news"><span data-hover="News">News</span></a></li>
-                        <li><a href="../../iamkarikari"><span data-hover="Portfolio"> Portfolio</span></a></li>
+                        <!-- <li><a href="news"><span data-hover="News">News</span></a></li>
+                        <li><a href="../../iamkarikari"><span data-hover="Portfolio"> Portfolio</span></a></li> -->
                         <li><a href="contact"><span data-hover="Contact">Contact</span></a></li>
 
                     </ul>
@@ -93,7 +93,7 @@ include 'connect.php';
     <div class="auto-container clearfix">
         <!--Logo-->
         <div class="logo pull-left">
-            <a href="home" class="img-responsive"><img src="img/new_logo.png" alt="" title=""></a>
+            <a href="home" class="img-responsive"><img src="img/healthintotality.jpeg" alt="" title=""></a>
         </div>
 
         <!--Right Col-->
@@ -117,7 +117,7 @@ include 'connect.php';
 
     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
     <nav class="menu-box">
-        <div class="nav-logo"><a href="home"><img src="img/new_logo.png" alt="" title=""></a></div>
+        <div class="nav-logo"><a href="home"><img src="img/healthintotality.jpeg" alt="" title=""></a></div>
 
         <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
     </nav>
