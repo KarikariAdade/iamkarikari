@@ -27,4 +27,5 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/all.min.js"></script>
 <script type="text/javascript" src="js/prism.js" data-manual></script>
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61d6108d06175100190c145b&product=sop' async='async'></script>
 
