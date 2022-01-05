@@ -18,7 +18,7 @@ include '../includes/connect.php';
         <div class="inner-container">
             <div class="auto-container clearfix">
                 <div class="logo-outer">
-                    <div class="logo"><a href="../home"><img src="../img/new_logo.png" alt="" title=""></a></div>
+                    <div class="logo"><a href="home"><img src="../img/healthintotality.jpeg" alt="" title=""></a></div>
                 </div>
                 <div class="nav-outer clearfix"><div class="mobile-nav-toggler"><span class="icon fa fa-bars"></span></div>
                 <nav class="main-menu navbar-expand-md navbar-light">
@@ -30,8 +30,8 @@ include '../includes/connect.php';
 
                     <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                         <ul class="navigation clearfix">
-                            <li><a href="../home"><span data-hover="Home">Home</span></a></li>
-                            <li><a href="../about"><span data-hover="About">About</span></a></li>
+                            <li><a href="home.html"><span data-hover="Home">Home</span></a></li>
+                            <li><a href="about"><span data-hover="About">About</span></a></li>
                             <li class="dropdown has-mega-menu"><a href="#"><span data-hover="Categories">Categories</span></a>
                                 <div class="mega-menu">
                                     <div class="mega-menu-bar row clearfix">
@@ -48,11 +48,11 @@ include '../includes/connect.php';
                                             <?php
                                         }
                                         ?>
-
+                                        
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="../personal"><span data-hover="Personal">Personal</span></a></li>
+                            <li><a href="personal"><span data-hover="Personal">Personal</span></a></li>
                             <li class="dropdown mobile-dropdown"><a href="#"><span data-hover="Category"> Category</span></a>
                                 <ul>
                                   <?php
@@ -67,9 +67,9 @@ include '../includes/connect.php';
                             </ul>
                         </li>
 
-                        <li><a href="../news"><span data-hover="News">News</span></a></li>
-                         <li><a href="../../iamkarikari"><span data-hover="Portfolio"> Portfolio</span></a></li>
-                        <li><a href="../contact"><span data-hover="Contact">Contact</span></a></li>
+                        <!-- <li><a href="news"><span data-hover="News">News</span></a></li>
+                        <li><a href="../../iamkarikari"><span data-hover="Portfolio"> Portfolio</span></a></li> -->
+                        <li><a href="contact"><span data-hover="Contact">Contact</span></a></li>
 
                     </ul>
                 </div>
@@ -80,7 +80,7 @@ include '../includes/connect.php';
             <div class="outer-box clearfix">
                 <!-- Search Btn -->
                 <div class="search-box-btn"><span class="icon fa fa-search"></span></div>
-
+                
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@ include '../includes/connect.php';
     <div class="auto-container clearfix">
         <!--Logo-->
         <div class="logo pull-left">
-            <a href="../home" class="img-responsive"><img src="../img/new_logo.png" alt="" title=""></a>
+            <a href="home" class="img-responsive"><img src="../img/healthintotality.jpeg" alt="" title=""></a>
         </div>
 
         <!--Right Col-->
@@ -117,7 +117,7 @@ include '../includes/connect.php';
 
     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
     <nav class="menu-box">
-        <div class="nav-logo"><a href="../home"><img src="../img/new_logo.png" alt="" title=""></a></div>
+        <div class="nav-logo"><a href="home"><img src="../img/healthintotality.jpeg" alt="" title=""></a></div>
 
         <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
     </nav>
@@ -128,23 +128,23 @@ include '../includes/connect.php';
     <div class="popup-inner">
         <div class="overlay-layer"></div>
         <div class="search-form">
-            <form method="post" action="../search">
+            <form method="POST" action="search">
                 <div class="form-group">
                     <fieldset>
                         <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                        <input type="submit" value="Search Now!" class="theme-btn">
+                        <input type="submit" value="Search" class="theme-btn">
                     </fieldset>
                 </div>
             </form>
             <br>
             <h3>Recent Search Keywords</h3>
             <ul class="recent-searches">
-             <?php
-             $fetch_post_tags = $conn->query("SELECT * FROM tags ORDER BY id DESC LIMIT 18");
-             while ($tag_row = mysqli_fetch_assoc($fetch_post_tags)) {
+               <?php
+               $fetch_post_tags = $conn->query("SELECT * FROM tags ORDER BY id DESC LIMIT 18");
+               while ($tag_row = mysqli_fetch_assoc($fetch_post_tags)) {
                 $tag = $tag_row['tag_slug'];
                 ?>
-                <li><a href="../tags/<?= $tag;?>"><?= $tag_row['tag_name']; ?></a></li>
+                <li><a href="tags/<?= $tag;?>"><?= $tag_row['tag_name']; ?></a></li>
                 <?php }?>
             </ul>
         </div>

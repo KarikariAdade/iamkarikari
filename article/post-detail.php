@@ -42,6 +42,8 @@ if (mysqli_num_rows($fetch_detail) > 0) {
 	<meta property="article:published_time" content="<?= $detail['date']; ?>" />
 	<meta charset="utf-8">
 	<title><?= $detail['title']; ?></title>
+
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61d6108d06175100190c145b&product=sop' async='async'></script>
 	<?php include 'includes/header.php';?>
 	<script type="text/javascript">
 		function views(slug){

@@ -514,14 +514,17 @@ ul,li{
 	transition:all 600ms ease;
 }
 
-.main-header .logo-outer .logo img{
-	position:relative;
-	display:inline-block;
-	max-width:100px;
-  position: absolute;
-  top: 10px;
-  left: 40%;
+.main-header .logo-outer .logo img {
+    position: relative;
+    display: inline-block;
+    max-width: 100px;
+    position: absolute;
+    top: 4px;
+    height: 77px !important;
+    left: 40%;
 }
+
+
 
 .main-header .header-upper .nav-outer{
 	float: right;
