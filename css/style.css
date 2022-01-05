@@ -1212,7 +1212,7 @@ ul,li{
 .search-popup .search-form fieldset input[type="search"]{
 	position:relative;
 	height:70px;
-	padding:20px 220px 20px 30px;
+	/*padding:20px 220px 20px 30px;*/
 	background:#ffffff;
 	line-height:30px;
 	font-size:24px;
@@ -1237,6 +1237,33 @@ ul,li{
 	cursor:pointer;
 	text-transform:uppercase;
 	border-radius:0px 7px 7px 0px;
+
+
+	position: absolute;
+    display: block;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    width: 107px;
+    height: 70px
+;
+    /* padding: 20
+px
+ 10
+px
+ 20
+px
+ 10
+px
+; */
+    color: #ffffff !important;
+    background-color: #1a1e25;
+    line-height: 0px;
+    /* font-size: 20px; */
+    color: #233145;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0px 7px 7px 0px;
 }
 
 .search-popup .search-form fieldset input[type="submit"]:hover{
@@ -1919,7 +1946,7 @@ POP UP MODAL
   background-color: #fff;
   z-index: 100;
   position: fixed !important;
-  width: 100%;
+  width: 92%;
   z-index: 9999 !important;
   top: 30% !important;
   border-radius: 5px;
