@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../css/prism.css">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="google-site-verification" content="lJJ1X8fMQ1QAiGS6Amu7M5dzdSJq0_4CnAInq-4dvXI" />
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>

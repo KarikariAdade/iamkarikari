@@ -6,7 +6,7 @@
     <meta name="description" content="The Healthcare Blog">
     <meta name="og:description" content="The Healthcare Blog">
     <meta name="keywords" content="News, Reviews, Healthcare, Technology, Health Issues, Pharmacy">
-    <meta property='og:title' content='Blog - AK Web'>
+    <meta property='og:title' content='Health in Totality'>
     <meta property='og:type' content='article'>
     <meta name="og:url" content="www.healthintotality.com">
     <meta charset="utf-8">

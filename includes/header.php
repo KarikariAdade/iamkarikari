@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css/prism.css">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="google-site-verification" content="lJJ1X8fMQ1QAiGS6Amu7M5dzdSJq0_4CnAInq-4dvXI" />
 <link rel="apple-touch-icon" sizes="57x57" href="img/logo/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="img/logo/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="img/logo/apple-icon-72x72.png">
