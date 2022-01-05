@@ -36,9 +36,9 @@ if (mysqli_num_rows($fetch_detail) > 0) {
 	<meta property='og:description' content="<?= first_sentence($detail['post_desc']); ?>">
 	<meta property='og:title' content="<?= $detail['title']; ?>">
 	<meta property='og:type' content='article'>
-	<meta property='og:url' content="www.akweb.blog/article/<?= urlencode($slug);?>">
+	<meta property='og:url' content="https://www.healthintotality.com/article/<?= urlencode($slug);?>">
 	<meta property="og:image" content="<?= $post_image; ?>"/>
-	<meta property="og:site_name" content="AKWeb blog" />
+	<meta property="og:site_name" content="Health in Totality" />
 	<meta property="article:published_time" content="<?= $detail['date']; ?>" />
 	<meta charset="utf-8">
 	<title><?= $detail['title']; ?></title>
