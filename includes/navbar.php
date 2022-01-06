@@ -117,7 +117,7 @@ include 'connect.php';
 
     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
     <nav class="menu-box">
-        <div class="nav-logo"><a href="home"><img src="img/healthintotality.jpeg" alt="" title=""></a></div>
+        <div class="nav-logo"><a href="home"><img src="img/healthintotality.jpeg" style="width:100px !important; height:100px !important;" alt="" title=""></a></div>
 
         <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
     </nav>
